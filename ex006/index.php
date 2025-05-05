@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php 
+    //CAPRANDO  OS DADOS DO FORMULARIO DO RETROALIMENTADO
+    $valor1 = $_GET['V1'] ?? 0;
+    $VALOR2 = $_GET['V2'] ?? 0;
+    ?>
     <main>
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
         <label for="v1">valor 1</label>
-        <input type="number" name="v1" id="v1">
+        <input type="number" name="v1" id="v1" value="<?php $valor1?>">
         <label for="v2">Valor 2</label>
-        <input type="number" name="v2" id="v2">
+        <input type="number" name="v2" id="v2" value="<?php $valor2?>" >
         <input type="submit" value="Somar">
         </form>
     </main>
+    
     
 </body>
 </html>
