@@ -9,8 +9,8 @@
 <body>
     <?php 
     //CAPRANDO  OS DADOS DO FORMULARIO DO RETROALIMENTADO
-    $valor1 = $_GET['V1'] ?? 0;
-    $VALOR2 = $_GET['V2'] ?? 0;
+    $valor1 = $_GET['v1'] ?? 0;
+    $valor2 = $_GET['v2'] ?? 0;
     ?>
     <main>
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
@@ -21,7 +21,7 @@
         <input type="submit" value="Somar">
         </form>
     </main>
-    
+
     
 </body>
 </html>
