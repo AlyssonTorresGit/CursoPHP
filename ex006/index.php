@@ -21,6 +21,13 @@
         <input type="submit" value="Somar">
         </form>
     </main>
+    <section id="resultado">
+        <h2>resultado</h2>
+        <?php 
+        $soma = $valor1 + $valor2;
+        echo "<p> a soma entre os valore $valor1 e $valor2 é igual a $soma";
+        ?>
+    </section>
 
     
 </body>
