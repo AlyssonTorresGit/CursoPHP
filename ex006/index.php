@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <form action="" method="get">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
         <label for="v1">valor 1</label>
         <input type="number" name="v1" id="v1">
         <label for="v2">Valor 2</label>
